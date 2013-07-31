@@ -1,0 +1,100 @@
+<header role="navigation" id="top_section" class="backg_black text_center">
+    <div class="container clearfix">
+		<h1>Neue Show anlegen</h1>
+    </div>
+    <div class="clear"></div> 
+</header>
+
+<main role="main">
+    <div id="main_container" class="backg_white">
+        <section role="region">
+            <div class="container clearfix center">
+				<input type="text" id="veranstaltung" class="topcoat-text-input mobileWidth" value="" placeholder="Veranstaltung">
+				<input type="text" id="ort" class="topcoat-text-input mobileWidth" value="" placeholder="Ort">
+				<div class="clear"></div>
+				<input type="number" id="kilometer" class="topcoat-text-input mobileWidth" value="" placeholder="Kilometer (eine Richtung)">
+				<input type="date" id="datum" class="topcoat-text-input mobileWidth" value="" placeholder="Datum">
+				<hr />
+			</div>
+			<div class="clear"></div>
+
+			<div class="container clearfix center">
+				<div id="drivers_button">
+				  <h2>Fahrer:</h2>
+				</div>
+				<div id="drivers" class="container clearfix">
+					<table class="full">
+						<tr>
+							<td class="half left"><input type="checkbox" id="hannes"><p>Hannes</p></td>
+							<td class="half left"><input type="radio" name="bus" value="Hannes" class="topcoat-radio-input"><p>Bus</p></td>
+						</tr>
+						<tr>
+							<td class="half left"><input type="checkbox" id="kiebe"><p>Kiebe</p></td>
+							<td class="half left"><input type="radio" name="bus" value="Kiebe" class="topcoat-radio-input"><p>Bus</p></td>
+						</tr>
+						<tr>
+							<td class="half left"><input type="checkbox" id="mike"><p>Mike</p></td>
+							<td class="half left"><input type="radio" name="bus" value="Mike" class="topcoat-radio-input"><p>Bus</p></td>
+						</tr>
+						<tr>
+							<td class="half left"><input type="checkbox" id="reini"><p>Reini</p></td>
+							<td class="half left"><input type="radio" name="bus" value="Reini" class="topcoat-radio-input"><p>Bus</p></td>
+						</tr>
+						<tr>
+							<td class="half left"><input type="checkbox" id="till"><p>Till</p></td>
+							<td class="half left"><input type="radio" name="bus" value="Till" class="topcoat-radio-input"><p>Bus</p></td>
+						</tr>
+					</table>		
+				</div>
+			</div>
+			<div class="clear"></div>
+
+			<div class="container clearfix center">
+				<hr />
+				<div id="optionals_button" class="scroll" href="#optionals">
+				  <h2>Optionale Angaben:</h2>
+				</div>
+				<div id="optionals">
+					<p><input type="text" id="gage" class="topcoat-text-input mobileWidth" value="" placeholder="Gage"></p>
+					<table class="full">
+						<tr>
+							<td class="left">Unterkunft</td>
+						</tr>
+						<tr>
+							<td class="half left"><input type="radio" name="bett" value="Ja" class="topcoat-checkbox"><p>JA</p></td>
+							<td class="half left"><input type="radio" name="bett" value="Nein" class="topcoat-checkbox"><p>NEIN</p></td>
+						</tr>
+						<tr>
+							<td class="half left">
+								<select name="bewertung" id="bewertung">
+									<option value="">keine Bewertung</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</td>
+							<td class="half left">Bewertung</td>
+						</tr>
+					</table>
+					<p><textarea id="anmerkung" class="topcoat-textarea mobileWidth" rows="4" placeholder="Anmerkung"></textarea></p>		
+				</div>
+				<hr />
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <section role="region" id="bottom_section" class="backg_black">
+            <div class="container clearfix text_center">
+               <!-- neuer Eintrag, Speichern, Abbrechen -->
+               <div class="bottom_controls">
+	               	<div class="text_center float_left" id="cancel_entry">
+	               		<a href="home"><h1>Abbrechen</h1></a>
+	               	</div>
+               		<div class="text_center float_left" id="save_entry">
+	               		<a href="home"><h1>Speichern</h1></a>
+	               	</div>
+               </div>	               
+            </div>
+        </section>
+    </div>
+</main>

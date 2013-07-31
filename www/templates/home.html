@@ -1,0 +1,49 @@
+<header role="navigation" class="backg_black text_center">
+    <div class="container clearfix">
+		<h1>Eingetragene Shows</h1>
+    </div>
+    <div class="clear"></div> 
+</header>
+
+<main role="main">
+    <div id="main_container">
+        <section role="region">
+            <div class="container clearfix">
+				<div class="topcoat-list__container">
+					<ul id="giglist" class="topcoat-list">
+                        <li class="topcoat-list__item" id="listhead">
+                            <table>
+                                <tr>
+                                    <td class="width_40p left"><b>Datum</b></td>
+                                    <td class="width_50p left"><b>Veranstaltung</b></td>
+                                    <td class="width_10p left"><b>Km</b></td>
+                                </tr>
+                            </table>
+                        </li>
+                        <% gigs.each(function(model){ %>
+                            <a href='details' data-id="${id}">
+                                <li class='topcoat-list__item details' data-id="<%= model.get('id') %>">
+                                    <table>
+                                        <tr>
+                                            <td class='width_40p left' data-id="<%= model.get('id') %>"><%= model.get('Datum') %></td>
+                                            <td class='width_50p left' data-id="<%= model.get('id') %>"><%= model.get('Veranstaltung') %></td>
+                                            <td class='width_10p left' data-id="<%= model.get('id') %>"><%= model.get('Kilometer') %></td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </a>
+                        <% }); %>
+					</ul>
+				</div>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <section role="region" id="bottom_section" class="backg_black">
+            <div class="container clearfix text_center">
+               <!-- neuer Eintrag, Speichern, Abbrechen -->
+               <a href="addGig"><h1 id="neuer_eintrag">neuer Eintrag</h1></a>
+            </div>
+        </section>
+    </div>
+</main>

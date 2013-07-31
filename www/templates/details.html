@@ -1,0 +1,66 @@
+<header role="navigation" class="backg_black text_center">
+    <div class="container clearfix">
+      <h1>Details</h1>
+  </div>
+  <div class="clear"></div> 
+</header>
+
+<main role="main">
+    <div id="main_container" class="backg_white">
+        <section role="region">
+            <div class="container clearfix">
+                <div class="topcoat-list__container content" id="details">
+                    <ul class="topcoat-list">
+                        <li>
+                            <div class="half float_left backg_lgray"><p>Datum</p></div> <div class="half float_left backg_lgray"><p><%= model.get('Datum') %></p></div>
+                        </li>
+                        <li>
+                            <div class="half float_left"><p>Veranstaltung</p></div> <div class="half float_left"><p><%= model.get('Veranstaltung') %></p></div>
+                        </li>
+                        <li>
+                            <div class="half float_left backg_lgray"><p>Ort</p></div> <div class="half float_left backg_lgray"><p><%= model.get('Ort') %></p></div>
+                        </li>
+                        <li>
+                            <div class="half float_left"><p>Kilometer</p></div> <div class="half float_left"><p><%= model.get('Kilometer') %></p></div>
+                        </li>
+                        <li>
+                            <div class="half float_left backg_lgray"><p>Unterkunft</p></div> <div class="half float_left backg_lgray"><p><%= model.get('Bett') %></p></div>
+                        </li>
+                        <li>
+                            <div class="half float_left"><p>Bewertung</p></div> <div class="half float_left"><p><%= model.get('Bewertung') %></p></div>
+                        </li>
+                        <li>
+                            <div class="half float_left backg_lgray"><p>Gage</p></div> <div class="half float_left backg_lgray"><p><%= model.get('Gage') %>€</p></div>
+                        </li>
+                        <li>
+                            <div class="half float_left"><p>Fahrer</p></div>
+                            <div class="half float_left">
+                                <p>
+                                <% if(model.get('Hannes') === '1'){ %> Hannes, <% } %>                      
+                                <% if(model.get('Kiebe') === '1'){ %> Kiebe, <% } %>                      
+                                <% if(model.get('Mike') === '1'){ %> Mike, <% } %>                      
+                                <% if(model.get('Reini') === '1'){ %> Reini, <% } %>                      
+                                <% if(model.get('Till') === '1'){ %> Till <% } %>
+                                ;
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="half float_left"><p>Bus</p></div> <div class="half float_left"><p><%= model.get('Bus') %></p></div>
+                        </li>
+                        <li>
+                            <div class="half float_left backg_lgray"><p>Anmerkung</p></div> <div class="half float_left backg_lgray"><p><%= model.get('Anmerkung') %></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section>
+
+        <section role="region" id="bottom_section" class="backg_black">
+            <div class="container clearfix text_center">
+             <a href="home"><h1 id="back">Zurück</h1></a>
+         </div>
+     </section>
+ </div>
+</main>

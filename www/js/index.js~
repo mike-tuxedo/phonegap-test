@@ -41,6 +41,10 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-       	initiateBackboneApp();
+       	detailsview = new DetailsView;
+	gigview = new NewGigView;
+	appview = new AppView;
+	console.log('setup router');
+	setupRouter();
     }
 };

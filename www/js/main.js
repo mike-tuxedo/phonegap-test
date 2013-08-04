@@ -2,6 +2,7 @@
  		Backbone App
  -------------------------*/
 function initiateBackboneApp(){
+	console.log('initialte backbone part');
 
 	/*----------------
 	 		MODEL
